@@ -2,33 +2,97 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alwandigidev | Jasa Landing Page</title>
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
     }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
     header {
-      padding: 40px;
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      padding: 60px 20px;
       text-align: center;
-      background: #1e293b;
     }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
     section {
-      padding: 30px;
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    .box {
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #93c5fd;
+    }
+
+    .services, .pricing, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
       background: #020617;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
     }
-    a {
-      color: #38bdf8;
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #60a5fa;
+    }
+
+    .price {
+      font-size: 1.8rem;
+      color: #22c55e;
+      margin: 15px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: #2563eb;
+      color: white;
       text-decoration: none;
+      border-radius: 8px;
       font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      color: #94a3b8;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -36,27 +100,74 @@
 
 <header>
   <h1>Alwandigidev</h1>
-  <p>Jasa Pembuatan Landing Page Profesional</p>
+  <p>Jasa Pembuatan Landing Page Profesional & Mobile Friendly</p>
 </header>
 
-<section class="box">
+<section>
   <h2>Layanan</h2>
-  <p>✔ Landing Page UMKM</p>
-  <p>✔ Website Promosi</p>
-  <p>✔ Mobile Friendly</p>
+  <div class="services">
+    <div class="card">
+      <h3>Landing Page UMKM</h3>
+      <p>Website 1 halaman untuk promosi produk atau jasa.</p>
+    </div>
+    <div class="card">
+      <h3>Landing Page Produk</h3>
+      <p>Cocok untuk jualan online & campaign iklan.</p>
+    </div>
+    <div class="card">
+      <h3>Custom Design</h3>
+      <p>Desain sesuai kebutuhan bisnis kamu.</p>
+    </div>
+  </div>
 </section>
 
-<section class="box">
-  <h2>Harga</h2>
-  <p>Mulai Rp300.000</p>
-  <p>Bayar via DANA</p>
+<section>
+  <h2>Paket Harga</h2>
+  <div class="pricing">
+    <div class="card">
+      <h3>Basic</h3>
+      <p class="price">Rp300.000</p>
+      <p>1 halaman</p>
+      <p>Mobile friendly</p>
+    </div>
+    <div class="card">
+      <h3>Standard</h3>
+      <p class="price">Rp500.000</p>
+      <p>Custom desain</p>
+      <p>Free revisi 1x</p>
+    </div>
+    <div class="card">
+      <h3>Premium</h3>
+      <p class="price">Rp800.000</p>
+      <p>Full custom</p>
+      <p>Prioritas pengerjaan</p>
+    </div>
+  </div>
 </section>
 
-<section class="box">
-  <h2>Kontak</h2>
-  <p>Email: alwandigidev@gmail.com</p>
-  <p>Telegram: @alwandigidev</p>
+<section>
+  <h2>Contoh Landing Page</h2>
+  <div class="portfolio">
+    <div class="card">
+      <h3>Landing Page UMKM</h3>
+      <p>Demo landing page sederhana & cepat.</p>
+    </div>
+    <div class="card">
+      <h3>Landing Page Produk</h3>
+      <p>Fokus konversi & tampilan modern.</p>
+    </div>
+  </div>
 </section>
+
+<section style="text-align:center;">
+  <h2>Order Sekarang</h2>
+  <p>Bayar via DANA • Proses cepat • Aman</p>
+  <a class="btn" href="https://t.me/usernamekamu" target="_blank">Order via Telegram</a>
+</section>
+
+<footer>
+  © 2026 Alwandigidev • Landing Page Developer
+</footer>
 
 </body>
 </html>
